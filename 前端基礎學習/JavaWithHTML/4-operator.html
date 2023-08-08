@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java 運算符號</title>
+    </head>
+    <body>
+        <script>
+            //算術運算 : + , - , * , / , %
+            let a = 3+4;
+            console.log(a);
+
+            let b = 7%3;
+            console.log(b);
+
+            //指定運算
+            b+=1;
+            console.log(b);
+
+            //比較運算 > , < , >= , <= , ==
+            x = "Hello" == "Hellos"
+            console.log(x);
+
+            // 單元運算 : ! , ++ , --
+            let y
+            y != y
+            console.log(y)
+
+            // 邏輯運算 : && , ||
+            let test = true && true;  // &&
+            console.log(test);
+
+            let test1 = false || false;
+            console.log(test1);
+
+            // 請使用者輸入兩個數字， 得到乘法的結果
+            // 要求使用者輸入 : prompt(字串, 字串)  【回傳】 使用者輸入
+            let n1 = prompt("請輸入一個數字", " ")  // 變數n1 = 指令回傳的資料
+            let n2 = prompt("請輸入一個數字", " ")  // 變數n2 = 指令回傳的資料
+            let n3 = n1 * n2
+            console.log("整數相乘 = ", n3)
+        </script>
+    </body>
+</html>

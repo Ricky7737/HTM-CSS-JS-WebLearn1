@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let grades = [10, 20, 50, 80, 55]
+            console.log(grades)
+            grades.push(85)
+            grades.push(58)
+            console.log(grades)
+
+            console.log(grades[2])
+            console.log(grades.length)
+
+            //使用for 迴圈逐一取得陣列資料
+            //for i 初始直=0 ; i要小於陣列長度; i每次加一
+            let tatal = 0  // 用來累加
+            
+            for(let i=0; i<grades.length; i++){
+                console.log(grades[i])
+                tatal = tatal + grades[i]
+            }
+            let avarage = tatal/grades.length    //用來記錄平均 
+            console.log(tatal)
+            console.log(avarage)
+        </script>
+    </body>
+</html>

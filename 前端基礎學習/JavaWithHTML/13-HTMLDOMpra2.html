@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML 標籤選單練習</title>
+    </head>
+    <body>
+        <h3>HTML 標籤選單練習</h3>
+        <div>
+            <span onclick="chageToAbout()">關於我</span>
+            <span onclick="chageToExps()">學經歷</span>
+        </div>
+        <hr/>
+        <div id="about">大家好我是阿寶</div>
+        <!--style display:none 隱藏標籤-->
+        <div id="exps" style="display: none">我是虎尾科技大學資訊管理系畢業</div>
+        <script>
+            
+             function chageToAbout(){
+                //先取得標籤
+                let aboutDiv = document.querySelector("#about")
+                let expsDiv = document.querySelector("#exps")
+                //對標籤操作
+                aboutDiv.style.display="block"
+                expsDiv.style.display="none"
+            }
+
+            function chageToExps(){
+                //先取得標籤
+                let aboutDiv = document.querySelector("#about")
+                let expsDiv = document.querySelector("#exps")
+                //對標籤操作
+                aboutDiv.style.display="none"
+                expsDiv.style.display="block"
+            }
+        </script>
+    </body>
+</html>

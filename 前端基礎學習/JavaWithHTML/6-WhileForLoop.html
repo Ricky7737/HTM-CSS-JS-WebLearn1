@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>流程控制迴圈</title>
+    </head>
+    <body>
+        <script>
+            //while 迴圈
+
+            console.log("While迴圈")
+            let a = 0
+            while(a <5){
+                    console.log(a)
+                    a+=1
+            }
+
+            //for 迴圈
+            console.log("For 迴圈")
+            for(let b =0; b<=5; b+=1){
+                     console.log(b)
+            }
+
+            //計算1+2+3+~10
+            //使用while
+            console.log("使用while loop 計算1+2+3+~10")
+            let c = 1
+            let ressult=0  //用來累加c
+            while(c<=10){
+                console.log(c)
+                ressult = ressult+c  //累加的動作
+                c+=1                           
+            }
+            console.log("1加到10=", ressult)
+
+            //使用For
+            console.log("使用For loop 計算1+2+3+~10")
+            let ressult_1 = 0
+            for(let d=0; d<=10; d++){
+                console.log(d)
+                ressult_1 = ressult_1+d
+            }
+            console.log(ressult_1)
+        </script>
+    </body>
+</html>

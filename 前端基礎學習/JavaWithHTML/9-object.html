@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            /*
+            let man = new Object()  //建立空白物件
+            man.age=18              //物件.成員名稱 = 資料
+            man.name="阿寶"
+            man.talk = function(){
+                //物件的方法中使用 this ， 代表物件本身
+                console.log("Hello 我是", this.name, "年齡", this.age)
+            }
+            console.log(man)     //印出 man 整個物件
+            console.log(man.age) //單獨印出其中一個物件
+            man.talk() //呼叫物件的方法
+            */
+
+            //使用 Json 建立物件
+            let man = {
+                age:15,
+                name:"阿寶",
+                talk:function(){
+                    console.log("Hello 我是", this.name, "年齡", this.age )
+                }
+            }   //代表一個空白物件
+            console.log(man)     //印出 man 整個物件
+            console.log(man.age) //單獨印出其中一個物件
+            man.talk() //呼叫物件的方法
+        </script>
+    </body>
+</html>

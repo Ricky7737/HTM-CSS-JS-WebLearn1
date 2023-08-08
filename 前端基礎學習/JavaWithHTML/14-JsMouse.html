@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java事件處理</title>
+        <style>
+            .btn{
+                font-size: 20px;
+                background-color: cadetblue;
+                padding: 8px;border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Java事件處理</h3>
+
+        <span 
+            class="btn"
+            onmousemove="over(this)"
+            onmouseout="out(this)"
+            onmouseup="up(this)"
+            onmousedown="down(this)"
+            >點我</span>
+
+        <span 
+            class="btn"
+            onmousemove="over(this)"
+            onmouseout="out(this)"
+            onmouseup="up(this)"
+            onmousedown="down(this)"
+            >第二個按鈕</span>
+
+        <script>
+            function up(elem){
+                elem.style.fontWeight="normal"
+            }
+            function down(elem){
+                elem.style.fontWeight="bold"
+            }
+            function over(elem){
+                elem.style.backgroundColor="green"
+            }
+            function out(elem){
+                elem.style.backgroundColor="cadetblue"
+            }
+        </script>
+    </body>
+</html>

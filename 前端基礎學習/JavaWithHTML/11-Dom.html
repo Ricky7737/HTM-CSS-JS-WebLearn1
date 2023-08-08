@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM 核心觀念</title>
+    </head>
+    <body>
+        <script>
+            //1.認識 內建 window 物件 (HTML DOM 結構最上層)
+            console.log(window)
+            //2.視窗高度與寬度
+            console.log("視窗高度:", window.innerHeight)
+            console.log("視窗寬度:", window.innerWidth)
+
+            //3.透過 screen 取得螢幕尺寸
+            console.log("螢幕寬度跟高度", window.screen.width, window.screen.height)
+            //4.取的網址內容
+            console.log("網站路徑", window.location.href)
+            //5.更改網址列的內容 (跳轉網頁)
+            // window.location.href="https://www.facebook.com/" 跳轉網頁
+
+            //6.認識 documet 物件(代表網頁主要內容)
+            console.log(window.document)  //比較直覺化
+            console.dir(document)         //比較程式化
+            console.log(document.title)
+
+            //7.更改網頁標題
+            document.title = "新的標題"
+            console.log(document.title)
+
+            //8.取的body標籤
+            console.log(document.body)
+
+            //8-1. 取得 body 標籤的內文
+            console.log(document.body.innerHTML)
+
+            //取代 body 裡面的內容
+            document.body.innerHTML="Hello HTML DOM"
+
+            
+        </script>
+    </body>
+</html>

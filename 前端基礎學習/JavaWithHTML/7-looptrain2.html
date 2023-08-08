@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //break 指令
+            console.log("break 指令")
+            let n=0
+            while (n<5) {
+                if (n==3) { //while第一圈先看這個判斷式
+                    break     // 強迫結束迴圈
+                }
+                console.log(n)
+                n++
+            }
+            //continue 指令
+            console.log("continue 指令")
+            for(let i =0; i<5; i++){
+                if(i==3){  // i = 3 的時候直接跳過下面迴圈並且繼續執行
+                    continue
+                }
+                console.log(i)
+            }
+
+            // 1-20 取偶數
+            console.log("1-20 取偶數")
+            for(let j =1; j<=20; j++){
+                if (j%2==1) {
+                    continue
+                }
+                console.log(j)
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js : HTML DOM網頁畫面操作</title>
+        <style>
+            .text{text-decoration: underline;font-weight: bold;}
+        </style>
+    </head>
+    <body>
+        <h3>HTML DOM畫面操作</h3>
+        <div id="content">練習網頁畫面的操作</div>
+        <!--點 button 就會呼叫 chageScreen()-->
+        <button onclick="chageScreen()">點我</button> 
+        <script>
+            function chageScreen(){
+                //document.body.innerHTML="新的內容"   //直接把body內容全部換掉
+                //取的標籤物件
+                let divElm = document.querySelector("#content")
+                //操作HTML標籤
+                divElm.innerHTML="對特定的標籤做操作"
+                divElm.className="text"
+                //操作CSS標籤
+                divElm.style.fontSize="30px"
+                divElm.style.color="blue"
+            }
+        </script>
+    </body>
+</html>
