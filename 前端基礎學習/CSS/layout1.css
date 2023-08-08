@@ -1,0 +1,38 @@
+.frame{
+    display: flex; /*水平排列*/
+}
+.Left{
+    background-color: blueviolet;
+    flex: none; /*固定配置*/
+    width: 200px;
+}
+
+.Right{
+    background-color: brown;
+    flex: auto;/*自動填滿剩下的*/
+    display: flex; /*讓Right裏頭水平排列*/
+    justify-content: flex-end;/*讓Right容器內項目水平靠右排列*/
+}
+
+.Item-Right{
+    background-color: azure;
+    flex: none;
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.welcome{
+    height: 300px;
+    background-color: aquamarine;
+    display: flex; /*用flex排版*/
+    justify-content: center;
+    align-items: center; /*下面完美置中*/
+}
+
+.text{
+    width: 300px;height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; /*文字也給他置中*/
+}

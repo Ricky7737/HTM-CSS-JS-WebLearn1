@@ -1,0 +1,64 @@
+/*原始設定*/
+.headline{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /*字體置中*/
+}
+
+/*設定電腦版選單*/
+.desktop-menu{
+    text-align: center;
+    display: block; /*電腦板先顯示*/
+}
+
+/*設定手機板選單*/
+.mobil-menu{
+    text-align: center;
+    display: none; /*手機板先隱藏*/
+}
+
+.list{
+    display: flex;
+    justify-content: center; /*項目置中*/
+}
+
+.product{
+    flex: none;
+    width: 280px;
+    margin: 10px;
+    background-color: coral;
+}
+
+/*用來設定在平板的螢幕尺寸*/
+@media (max-width:1250px){
+    /*當螢幕寬度小於 1250px，套用這個區塊的CSS*/
+    .list{
+        flex-wrap: wrap; /*允許項目往下掉*/
+    }
+    .product{
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+/*RWD如果要做兩個不同尺寸的螢幕，就做兩個*/
+/*用來設置手機的手機尺寸*/
+@media (max-width:500px){
+    /*當螢幕寬度小於 500px，套用這個區塊的CSS*/
+    .headline{
+        font-size: 20px;
+    }
+    .product{
+        width: 90%;
+    }
+    /*設定電腦版選單*/
+    .desktop-menu{
+        display: none; /*電腦板隱藏*/
+    }
+
+    /*設定手機板選單*/
+    .mobil-menu{
+        display: block; /*手機板顯示*/
+    }
+}
